@@ -1,6 +1,6 @@
 const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
+//const HtmlWebpackPlugin = require('html-webpack-plugin');
+//const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 const commonPaths = require('./paths');
 
 module.exports = {
@@ -51,11 +51,11 @@ module.exports = {
     },
     plugins: [
         new webpack.ProgressPlugin(),
-        new HtmlWebpackPlugin({
-            template: commonPaths.templatePath,
-        }),
-        new ScriptExtHtmlWebpackPlugin({
-            defaultAttribute: 'async',
-        }),
+//        new HtmlWebpackPlugin({
+//            template: commonPaths.templatePath,
+//        }),
+//        new ScriptExtHtmlWebpackPlugin({
+//            defaultAttribute: 'async',
+//        }),
     ],
 }
